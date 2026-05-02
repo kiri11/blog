@@ -1,0 +1,5 @@
+/kiri11/public/
+/kiri11/.sass-cache/
+/.zola/
+*.WordPress.*.xml
+migration-summary.txt
