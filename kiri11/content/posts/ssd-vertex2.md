@@ -154,14 +154,14 @@ Vertex 2 имеет в своей основе контроллер <strong>Sand
 <ul>
 	<li>Visual C# Express 2008 - около <strong>1</strong> секунды.</li>
 	<li>Skype 5.1 - <strong>2</strong> секунды.</li>
-	<li><a href="http://kiri11.ru/wunderlist/">Wunderlist</a> - <strong>3</strong> секунды.</li>
-	<li><a href="http://kiri11.ru/new-soft/">Google Chrome 10</a> - <strong>меньше секунды</strong>.</li>
+	<li><a href="/wunderlist/">Wunderlist</a> - <strong>3</strong> секунды.</li>
+	<li><a href="/new-soft/">Google Chrome 10</a> - <strong>меньше секунды</strong>.</li>
 	<li>Opera 11 - <strong>полторы</strong> секунды<strong>.</strong></li>
 	<li>Mozilla Firefox 3.6.13 - <strong>2 </strong>секунды.</li>
 	<li>iTunes - <strong>полторы </strong>секунды.</li>
 	<li>Photoshop CS3 - <strong>10</strong> секунд.</li>
 	<li>Dead Space 2 - <strong>7</strong> секунд.</li>
-	<li><a href="http://kiri11.ru/2gis/">ДубльГис</a> - <strong>2</strong> секунды.</li>
+	<li><a href="/2gis/">ДубльГис</a> - <strong>2</strong> секунды.</li>
 	<li>сервер <a href="http://www.denwer.ru/base.html">Denwer</a> - около <strong>2</strong> секунд.</li>
 </ul>
 Практически все остальные программы запускаются вообще мгновенно.
