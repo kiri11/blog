@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set posts = get_section(path="posts/_index.md") %}
+<section class="intro">
+  <h1>{{ config.title }}</h1>
+  <p>{{ config.description }}</p>
+</section>
+
+<section class="post-list" aria-label="Posts">
+  {% for page in posts.pages %}
+  <article class="post-preview">
+    <div class="preview-meta">
+      <time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+      {% if page.extra.author %}<span>{{ page.extra.author }}</span>{% endif %}
+    </div>
+    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+    {% if page.extra.preview_image %}
+    <a class="preview-image" href="{{ page.permalink }}" aria-hidden="true" tabindex="-1">
+      <img src="{{ page.extra.preview_image }}" alt="">
+    </a>
+    {% endif %}
+    {% if page.extra.preview %}
+    <p>{{ page.extra.preview }}</p>
+    {% elif page.summary %}
+    <p>{{ page.summary | striptags }}</p>
+    {% endif %}
+    {% if page.taxonomies.tags %}
+    <ul class="terms">
+      {% for tag in page.taxonomies.tags %}
+      <li><a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endblock content %}

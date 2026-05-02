@@ -1,0 +1,28 @@
+base_url = "https://kiri11.ru"
+title = "Kirill's Blog"
+description = "Opinions are mine. Not yours."
+default_language = "ru"
+
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+minify_html = true
+
+[markdown]
+render_emoji = false
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = true
+
+[markdown.highlighting]
+style = "inline"
+theme = "catppuccin-mocha"
+
+[[taxonomies]]
+name = "tags"
+feed = true
+
+[extra]
+author = "Kiri11"
+repo_url = "https://github.com/kiri11/kiri11.github.io"

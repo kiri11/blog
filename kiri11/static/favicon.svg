@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="]{">
+  <rect width="64" height="64" rx="12" fill="#fbfaf7"/>
+  <rect x="5" y="5" width="54" height="54" rx="9" fill="none" stroke="#ded8ce" stroke-width="2"/>
+  <text
+    x="29"
+    y="43"
+    fill="#202124"
+    font-family="Consolas, 'Liberation Mono', monospace"
+    font-size="40"
+    font-weight="700"
+    text-anchor="middle"
+    letter-spacing="-6">]{</text>
+</svg>

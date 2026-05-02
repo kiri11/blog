@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="page-heading">
+  <h1>{{ section.title }}</h1>
+  {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+</header>
+
+<section class="post-list" aria-label="{{ section.title }}">
+  {% for page in section.pages %}
+    <article class="post-preview">
+      <div class="preview-meta">
+        <time datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+        {% if page.extra.author %}<span>{{ page.extra.author }}</span>{% endif %}
+      </div>
+      <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+      {% if page.extra.preview_image %}
+        <a class="preview-image" href="{{ page.permalink }}" aria-hidden="true" tabindex="-1">
+          <img src="{{ page.extra.preview_image }}" alt="">
+        </a>
+      {% endif %}
+      {% if page.extra.preview %}
+        <p>{{ page.extra.preview }}</p>
+      {% elif page.summary %}
+        <p>{{ page.summary | striptags }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
+{% endblock content %}

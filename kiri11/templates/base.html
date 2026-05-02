@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ lang | default(value='ru') }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}{% if page.title and page.title != config.title %}{{ page.title }} | {{ config.title }}{% elif
+    section.title and section.title != config.title %}{{ section.title }} | {{ config.title }}{% else %}{{ config.title
+    }}{% endif %}{% endblock title %}</title>
+  <meta name="description"
+    content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+  <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') }}">
+  <link rel="stylesheet" href="{{ get_url(path='site.css') }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ config.title }} Atom"
+    href="{{ get_url(path='atom.xml') }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS" href="{{ get_url(path='rss.xml') }}">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="{{ config.base_url }}">{{ config.title }}</a>
+      <div class="nav-links">
+        <a href="{{ get_url(path='posts/') }}">Записи</a>
+        <a href="{{ get_url(path='tags/') }}">Теги</a>
+        <a href="{{ get_url(path='rss.xml') }}">RSS</a>
+      </div>
+    </nav>
+  </header>
+  <main class="site-main">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer class="site-footer">
+    <p><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 Licence</a>.
+      <br />Comments are read-only.
+    </p>
+  </footer>
+</body>
+
+</html>
