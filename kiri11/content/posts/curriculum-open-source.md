@@ -21,9 +21,9 @@ approved_comment_count = 0
 
 Итак, качайте:
 
-<a href="http://kiri11.ru/pmi/pmi22.exe">Расписание 0.2</a>
+<a href="https://github.com/kiri11/pmi-2011-curriculum/raw/refs/heads/main/build/pmi22.exe">Расписание 0.2</a>
 
-<a href="/assets/pmi/pmi22-source.rar">Source code</a>
+<a href="https://github.com/kiri11/pmi-2011-curriculum">Source code</a>
 
 <strong>TODO:</strong><ul>
 	<li>сделать значок приложения;</li>
